@@ -1,0 +1,8 @@
+name: train
+on:
+  workflow_dispatch:
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "placeholder: signal4orge.pipeline.train_pipeline"

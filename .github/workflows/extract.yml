@@ -1,0 +1,8 @@
+name: extract
+on:
+  workflow_dispatch:
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "placeholder: signal4orge.pipeline.extract_pipeline"

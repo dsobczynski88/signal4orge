@@ -1,0 +1,8 @@
+name: score
+on:
+  workflow_dispatch:
+jobs:
+  score:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "placeholder: signal4orge.pipeline.predict_pipeline"
