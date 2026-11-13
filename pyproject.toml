@@ -1,7 +1,29 @@
 [project]
 name = "signal4orge"
 version = "0.1.0"
-description = "Add your description here"
+description = "Quarterly stock ranker that flags the weakest fifth of stocks from filing-date features."
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+authors = [
+    { name = "Daniel Sobczynski", email = "dsobczynski88@gmail.com" },
+]
+dependencies = [
+    "matplotlib>=3.9",
+    "numpy>=2.1",
+    "pandas>=2.2",
+    "scikit-learn>=1.6",
+    "seaborn>=0.13",
+]
+
+[project.scripts]
+signal4orge = "signal4orge:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+native-tls = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/signal4orge"]
