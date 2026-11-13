@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: signal4orge
+      POSTGRES_PASSWORD: signal4orge
+      POSTGRES_DB: signal4orge
+    ports:
+      - "5432:5432"
