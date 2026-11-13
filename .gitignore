@@ -1,6 +1,6 @@
 # Python-generated files
 __pycache__/
-*.py[oc]
+*.py[cod]
 build/
 dist/
 wheels/
@@ -9,5 +9,20 @@ wheels/
 # Virtual environments
 .venv
 
-# Environment variables
+# Environment variables. .env.example stays tracked.
 .env
+
+# Tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Runtime logs
+logs/
+
+# Promoted weights. models/champion/.gitkeep stays tracked.
+models/champion/*
+!models/champion/.gitkeep
+
+# Alembic revisions are source. alembic/ stays tracked.
